@@ -724,6 +724,32 @@ footer {
         line-height: 57.6px;
     }
 
+    /* Partners */
+
+    .partner-logos {
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+        padding: 1rem 0;
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    }
+
+    .partner-logos::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+    }
+    
+    .partner-logos img {
+        flex: 0 0 auto; /* Prevent images from shrinking */
+        margin: 0 auto; /* Center the images */
+    }
+
+    .partner-logos::before,
+    .partner-logos::after {
+        content: none;
+    }
+
+
     /* Benefits Section */
     
     .benefits {
@@ -860,16 +886,6 @@ footer {
     /* Partners Section */
     .partners {
         margin-bottom: 160px;
-    }
-
-    .partner-logos {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
-
-    .partner-logos::before,
-    .partner-logos::after {
-        content: none; /* Remove fading effect */
     }
 
     /* Testimonials Section */
