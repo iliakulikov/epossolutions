@@ -634,7 +634,7 @@ footer {
 .footer-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     text-align: right;
     justify-content: space-between;
     height: 100%;
@@ -664,7 +664,6 @@ footer {
 .footer-links {
     display: flex;
     gap: 2rem;
-    justify-content: flex-end;
     padding-top: 240px;
 }
 
