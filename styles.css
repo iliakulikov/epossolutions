@@ -601,9 +601,12 @@ footer {
     background: #24AAE1;
     color: white;
     height: auto;
-    width: 100vw; /* Make footer span full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center the footer */
-    margin-right: calc(-50vw + 50%); /* Center the footer */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .footer-content {
@@ -676,7 +679,7 @@ footer {
 
 
 /* 1440 */
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .container,
     .hero,
     .partner-logos,
@@ -689,6 +692,19 @@ footer {
     }
 }
 
+@media (min-width: 1440px) {
+    .container,
+    .hero,
+    .partner-logos,
+    .testimonials,
+    .systems,
+    .benefits,
+    .contact,
+    .footer-content {
+        max-width: 1440px;
+        width: calc(100% - 240px);
+    }
+}
 
 
 /* 1130 */
@@ -913,7 +929,7 @@ footer {
 
     .benefits-block {
         flex-direction: column;
-        gap: 2rem;
+        gap: 5rem;
     }
 
     .benefits-block img {
