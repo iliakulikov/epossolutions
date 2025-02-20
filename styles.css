@@ -1,0 +1,1013 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: calc(100% - 360px); /* 180px from each side */
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 0 20px; Additional padding for smaller screens */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header and Navigation */
+header {
+    padding: 1rem 0;
+    background: #fff;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none; /* Hide burger by default */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-links a:nth-last-child(2) {
+    margin-right: 2rem; /* Increase the gap after the contact link */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0;
+}
+
+/* Buttons */
+.cta-button {
+    background: #24AAE1;
+    color: white;
+    border: none;
+    height: 44px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0.02em; 
+    padding: 18px 32px;
+}
+
+.cta-button:hover {
+    background: #0088d1;
+}
+
+.read-more:hover {
+    background: #00A3FF;
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 141px; /* Space from nav */
+    margin-bottom: 180px; /* Space before partners section */
+    max-width: calc(100% - 360px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px 48px 48px; /* Add padding to the hero section */
+    background: #F6F6F6; /* Apply grey background to the hero section */
+    border-radius: 12px;
+}
+
+.hero-content {
+    border-radius: 24px; /* Optional: Add border-radius for rounded corners */
+    z-index: 1; /* Ensure content is above the grey background */
+}
+
+.hero::before {
+    content: none;
+}
+
+.hero-content .spring-sale {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(61, 115, 239, 0.1);
+    color: #24AAE1;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.discount-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    margin-bottom: 16px;
+    color: #1A1A1A;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 32px;
+}
+
+.hero-content .cta-button {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.windows-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.windows-badge img {
+    width: 55px;
+    height: 55px;
+}
+
+.windows-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800; 
+    font-size: 15px;
+    text-align: center; 
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    transform: translateY(-140px); /* Makes image stick out of background */
+    margin-bottom: -140px;
+}
+
+/* Partners section */
+.partners {
+    text-align: center;
+    margin-bottom: 280px;
+}
+
+.partners h2 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.partner-logos {
+    position: relative; /* Ensure the pseudo-elements are positioned relative to this container */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center; /* Center items horizontally */
+    max-width: calc(100% - 360px);
+    margin: 0 auto;
+}
+
+.partner-logos img {
+    max-width: 100px; /* Ensure all logos have the same maximum width */
+    max-height: 100px; /* Ensure all logos have the same maximum height */
+    object-fit: contain; /* Ensure logos maintain their aspect ratio */
+}
+
+.partner-logos::before,
+.partner-logos::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px; /* Adjust width as needed */
+    pointer-events: none; /* Ensure the pseudo-elements don't interfere with interactions */
+}
+
+.partner-logos::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+.partner-logos::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Testimonials section */
+.testimonials {
+    max-width: calc(100% - 360px);
+    margin: 0 auto 280px;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 1.5rem;
+    border: 1px solid rgb(235, 235, 235); /* Add grey border */
+    border-radius: 16px; /* Optional: Add border-radius for rounded corners */
+    height: 100%; /* Ensure the card takes the full height */
+}
+
+.testimonial-author {
+    padding-top: 40px; /* Add padding-top */
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.testimonial-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.avatar-original {
+    height: 50px; /* Match the height of other avatars */
+    width: auto; /* Maintain the original width */
+    border-radius: 0; /* Remove the circular border */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    margin-bottom: 2rem;
+    align-self: flex-start;
+}
+
+.testimonial-card p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author span:first-child {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.testimonial-author span:last-child {
+    font-size: 0.8rem;
+}
+
+/* Systems section */
+.systems {
+    max-width: calc(100% - 360px);
+    margin: 0 auto 280px;
+}
+
+.systems h2 {
+    font-size: 40px;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+
+.systems-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.system-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: #F6F6F6;
+    border-radius: 16px;
+}
+
+.system-card img {
+    width: 100%;
+    border-radius: 16px 0 0 16px;
+    object-fit: cover; /* Ensure the image covers the area */
+    height: 100%; /* Make the image take the full height of its container */
+}
+
+.system-content {
+    padding-right: 2rem;
+}
+
+.demo-btn {
+    background: rgba(37, 170, 225, 0.1);
+    color: #25AAE1;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    line-height: 19.2px;
+    border: none;
+}
+
+.system-content h3 {
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.system-content > p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    line-height: 28.8px;
+}
+
+.system-content h4 {
+    font-size: 0.9rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-grid ul {
+    list-style: none;
+}
+
+.features-grid li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-grid li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Adjust width as needed */
+    height: 16px; /* Adjust height as needed */
+    background: url('img/check.svg') no-repeat center center;
+    background-size: contain; /* Ensure the image covers the area */
+}
+
+/* Benefits section */
+
+.benefits {
+    max-width: calc(100% - 360px);
+    margin: 0 auto 280px;
+}
+
+.benefits h2 {
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.benefit-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.benefits-block {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    border-radius: 16px; 
+}
+
+.benefits-block img {
+    width: 600px; /* Set the width to 672px */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 16px 0 0 16px; 
+}
+
+.benefits-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.benefits-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.benefits-content li {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 4rem;
+}
+
+.benefits-content li h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 28.8px;
+}
+
+.benefits-content li p {
+    font-size: 0.9rem;
+    line-height: 24px;
+}
+
+.benefits-content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.25rem; /* Align with the h3 */
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background-size: contain;
+}
+
+/* Individual icons for each benefit */
+.benefits-content li:nth-child(1)::before {
+    background-image: url('img/experience.svg');
+}
+
+.benefits-content li:nth-child(2)::before {
+    background-image: url('img/service.svg');
+}
+
+.benefits-content li:nth-child(3)::before {
+    background-image: url('img/support.svg');
+}
+
+.benefits-content li:nth-child(4)::before {
+    background-image: url('img/solutions.svg');
+}
+
+.benefits-content li:nth-child(5)::before {
+    background-image: url('img/warranty.svg');
+}
+
+/* Contact section */
+.contact {
+    max-width: calc(100% - 360px);
+    margin: 0 auto 280px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.contact-info a {
+    color: inherit; /* Inherit the color from parent */
+}
+
+.contact-info p:nth-child(2) {
+    margin-bottom: 2rem; /* Adds space after the address */
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    background: #F6F6F6; /* Add grey background */
+    padding: 2rem; /* Add padding around the form */
+    border-radius: 16px; /* Add rounded corners */
+}
+
+.contact-form label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: gray;
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.contact-form .cta-button {
+    padding: 12px 24px;
+    width: fit-content; /* This ensures the button only takes up as much space as needed */
+    align-self: flex-start;
+    background: #24AAE1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex; /* This helps with proper content alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background: #24AAE1;
+    color: white;
+    height: auto;
+    width: 100vw; /* Make footer span full viewport width */
+    margin-left: calc(-50vw + 50%); /* Center the footer */
+    margin-right: calc(-50vw + 50%); /* Center the footer */
+}
+
+.footer-content {
+    max-width: calc(100% - 360px);
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo p:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.footer-logo p:last-child {
+    margin-top: auto;
+    font-size: 0.875rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    line-height: 19.2px;
+    font-weight: 400;
+}
+
+.footer-info p:first-child {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-info p:not(:first-child) {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-top: 240px;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+/* Responsive design */
+
+
+/* 1440 */
+@media (max-width: 1440px) {
+    .container,
+    .hero,
+    .partner-logos,
+    .testimonials,
+    .systems,
+    .benefits,
+    .contact,
+    .footer-content {
+        max-width: calc(100% - 240px);
+    }
+}
+
+
+
+/* 1130 */
+@media (max-width: 1130px) {
+    .container,
+    .hero,
+    .partner-logos,
+    .testimonials,
+    .systems,
+    .benefits,
+    .contact,
+    .footer-content {
+        max-width: calc(100% - 120px);
+    }
+    
+    .hero-content h1 {
+        font-size: 48px;
+        line-height: 57.6px;
+    }
+
+    /* Benefits Section */
+    
+    .benefits {
+        margin-bottom: 160px;
+    }
+
+    .benefits h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .benefits-block {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .benefits-block img {
+        width: 70%;
+        border-radius: 16px;
+    }
+
+    .benefits-content {
+        padding-top: 0;
+    }
+
+    /* Systems Section */
+
+    .systems {
+        margin-bottom: 160px;
+    }
+
+    .systems h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .system-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .system-card img {
+        border-radius: 16px 16px 0 0;
+        object-fit: cover; /* Ensure the image covers the area */
+        height: 100%; /* Make the image take the full height of its container */
+    }
+
+    .system-content {
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+
+
+
+/* 768 */
+@media (max-width: 768px) {
+    .container,
+    nav,
+    .hero,
+    .partner-logos,
+    .testimonials,
+    .systems,
+    .benefits,
+    .contact,
+    .footer-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Navigation */
+
+    .nav-links {
+        display: none; /* Hide navigation links */
+    }
+    
+    .burger-menu {
+        display: block; /* Show burger menu */
+    }
+    
+    nav {
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        margin-bottom: 120px;
+        padding: 24px 20px;
+        background: #F6F6F6;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+        line-height: 52.8px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .hero-content .cta-button {
+        margin: 0 0 32px 0; /* Align to the right */
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        transform: none;
+        margin-bottom: 0;
+        max-width: 335px;
+    }
+
+    /* Partners Section */
+    .partners {
+        margin-bottom: 160px;
+    }
+
+    .partner-logos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .partner-logos::before,
+    .partner-logos::after {
+        content: none; /* Remove fading effect */
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        margin-bottom: 160px;
+    }
+
+    .testimonials h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Systems Section */
+    .systems {
+        margin-bottom: 160px;
+    }
+
+    .systems h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .system-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .system-card img {
+        border-radius: 16px 16px 0 0;
+        max-height: 400px;
+    }
+
+    .system-content {
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Benefits Section */
+    .benefits {
+        margin-bottom: 160px;
+    }
+
+    .benefits h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .benefits-block {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .benefits-block img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .benefits-content {
+        padding-top: 0;
+    }
+
+    /* Contact Section */
+    .contact {
+        margin-bottom: 160px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start; /* Change from center to flex-start */
+        text-align: left; /* Change from center to left */
+        padding: 40px 24px 32px; /* Adjust padding to match Figma */
+        gap: 146px; /* Adjust gap between sections */
+    }
+
+    .footer-info {
+        align-items: flex-start; /* Change from center to flex-start */
+        text-align: left; /* Change from center to left */
+        gap: 48px; /* Add gap between elements */
+    }
+
+    .footer-links {
+        padding-top: 0; /* Remove top padding */
+        justify-content: flex-start; /* Change from center to flex-start */
+        margin-bottom: 60px; /* Add space before copyright */
+    }
+
+    /* Add specific spacing for footer sections */
+    .footer-logo {
+        margin-bottom: 40px; /* Space after logo section */
+    }
+
+    .footer-info p {
+        margin-bottom: 12px; /* Consistent spacing between info items */
+    }
+
+    /* Adjust copyright and links container */
+    .footer-links-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-logo p:last-child {
+        position: absolute; /* Add this */
+        bottom: 32px; /* Add this */
+        left: 24px; /* Add this */
+    }
+}
+
+
+
+/* 320 */
+@media (max-width: 320px) {
+    .hero {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+        line-height: 52.8px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .cta-button {
+        padding: 14px 24px;
+        font-size: 16px;
+        margin: 0 0 32px 0; /* Align to the left */
+        width: 100%;
+    }
+}
