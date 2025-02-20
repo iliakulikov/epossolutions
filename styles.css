@@ -13,7 +13,6 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -702,7 +701,7 @@ footer {
     .contact,
     .footer-content {
         max-width: 1440px;
-        width: calc(100% - 240px);
+        width: calc(100% - 360px);
     }
 }
 
