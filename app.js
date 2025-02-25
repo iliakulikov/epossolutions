@@ -46,3 +46,10 @@ document.forms['submit-to-google-sheet'].addEventListener('submit', function(eve
 function cookieClose() {
   document.getElementById("cookie-message").style.display = "none";
 }
+
+
+// mobile menu
+function toggleMenu() {
+  const mobileNav = document.getElementById('mobile-nav');
+  mobileNav.classList.toggle('active');
+}

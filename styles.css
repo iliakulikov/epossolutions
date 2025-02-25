@@ -70,6 +70,57 @@ nav {
     letter-spacing: 0;
 }
 
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.mobile-nav a,
+.mobile-nav {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mobile-nav .cta-button {
+    background: #24AAE1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+/* Close button */
+.mobile-nav .closebtn {
+    position: absolute;
+    top: 23px;
+    right: 27px;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Buttons */
 .cta-button {
     background: #24AAE1;

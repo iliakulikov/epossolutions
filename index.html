@@ -30,8 +30,14 @@
                     <a href="#contact">Contact</a>
                     <button class="cta-button" onclick="location.href='#contact'">Get Offer</button>
                 </div>
-                <img src="img/burger.svg" alt="Menu" class="burger-menu">
+                <img src="img/burger.svg" alt="Menu" class="burger-menu" onclick="toggleMenu()">
             </nav>
+            <div class="mobile-nav" id="mobile-nav">
+                <a href="javascript:void(0);" class="closebtn" onclick="toggleMenu()">&times;</a>
+                <a href="about.html" onclick="toggleMenu()">About</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
+                <button class="cta-button" onclick="location.href='#contact'; toggleMenu();">Get Offer</button>
+            </div>
         </div>
     </header>
 
