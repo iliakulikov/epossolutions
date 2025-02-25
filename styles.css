@@ -581,7 +581,7 @@ nav {
 
 .contact-form .cta-button {
     padding: 12px 24px;
-    width: fit-content; /* This ensures the button only takes up as much space as needed */
+    width: auto; /* Change to auto to accommodate the spinner */
     align-self: flex-start;
     background: #24AAE1;
     color: white;
@@ -593,6 +593,26 @@ nav {
     display: inline-flex; /* This helps with proper content alignment */
     align-items: center;
     justify-content: center;
+    position: relative; /* This is needed for the spinner */
+}
+
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 8px solid black;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px; 
+    position: absolute; /* Position the spinner absolutely within the button */
+    right: 10px; /* Adjust the right position as needed */
+    top: 50%; /* Center the spinner vertically */
+    transform: translateY(-50%); /* Center the spinner vertically */
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* Footer */

@@ -16,7 +16,9 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="img/logo.png" alt="ePOS Solutions" height="40" width="159">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="ePOS Solutions" height="40" width="159">
+                    </a>
                 </div>
                 <div class="nav-links">
                     <a href="about.html">About</a>
@@ -223,14 +225,14 @@
                     <p>Phone: (01) 274 5807</p>
                     <p>Email: <a href="mailto:info@epossolutions.ie">info@epossolutions.ie</a></p>
                 </div>
-                <form class="contact-form">
+                <form name="submit-to-google-sheet" class="contact-form">
                     <div class="form-group">
                         <label for="name">Your name</label>
                         <input type="text" id="name" name="name" placeholder="Alex Smith">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="alexsmith@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="alexsmith@gmail.com" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone number</label>
@@ -240,7 +242,9 @@
                         <label for="message">What can we help you with?</label>
                         <textarea id="message" name="message"></textarea>
                     </div>
-                    <button type="submit" class="cta-button">Send</button>
+                    <input type="hidden" name="gclid" id="gclid">
+                    <button type="submit" class="cta-button">Send <div class="spinner" id="spinner" style="display: none;">
+                    </div></button>
                 </form>
             </div>
         </section>
@@ -267,5 +271,6 @@
         </div>
     </footer>
 </div>
+    <script src="app.js"></script>
 </body>
 </html>
