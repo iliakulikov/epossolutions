@@ -673,6 +673,35 @@ footer {
     font-size: 0.875rem;
 }
 
+
+/* About */
+
+.about {
+    max-width: calc(100% - 360px);
+    margin: 80px auto 180px;
+}
+
+.about-h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 24px; /* Add margin below the h2 headline */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.about-p {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
 /* Responsive design */
 
 
@@ -701,6 +730,10 @@ footer {
     .footer-content {
         max-width: 1440px;
         width: calc(100% - 360px);
+    }
+
+    .about {
+        max-width: calc(100% - 50%);
     }
 }
 
@@ -1013,6 +1046,11 @@ footer {
         bottom: 32px; /* Add this */
         left: 24px; /* Add this */
     }
+
+    .about {
+        max-width: calc(100% - 120px);
+    }
+
 }
 
 
@@ -1039,5 +1077,9 @@ footer {
         font-size: 16px;
         margin: 0 0 32px 0; /* Align to the left */
         width: 100%;
+    }
+
+    .about {
+        max-width: calc(100% - 60px);
     }
 }
