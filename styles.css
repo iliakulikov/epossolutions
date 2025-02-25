@@ -358,6 +358,7 @@ nav {
     margin-bottom: 24px;
     line-height: 19.2px;
     border: none;
+    cursor: pointer; /* Add pointer cursor */
 }
 
 .system-content h3 {
