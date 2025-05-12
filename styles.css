@@ -776,7 +776,7 @@ footer {
 
 /* Video Demo Section */
 .video-demo {
-    padding-bottom: 80px;
+    padding-bottom: 160px;
     text-align: left;
 }
 
@@ -809,11 +809,12 @@ footer {
 /* Media queries for responsive video */
 @media (max-width: 768px) {
     .video-demo {
-        padding: 50px 0;
+        padding: 0 20px 160px;
     }
     
     .video-demo h2 {
-        margin-bottom: 30px;
+        margin-bottom: 2.5rem;
+        font-size: 32px;
     }
 }
 
