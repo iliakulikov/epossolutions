@@ -1199,3 +1199,42 @@ footer {
         max-width: calc(100% - 60px);
     }
 }
+
+/* Badges container for horizontal alignment */
+.badges-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Style for both badge types */
+.windows-badge, .pos-badge {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.pos-badge img {
+    height: 55px;
+    margin-right: 10px;
+}
+
+.windows-text, .pos-text {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+}
+
+.windows-text span, .pos-text span {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .badges-container {
+        flex-direction: column;
+    }
+}
