@@ -31,6 +31,44 @@ function toggleMenu() {
   }
 }
 
+function initSmoothScrolling() {
+  document.addEventListener("click", function (event) {
+    const link = event.target.closest('a[href*="#"]');
+
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
+    }
+
+    const url = new URL(link.href, window.location.href);
+    const isCurrentPage = url.origin === window.location.origin &&
+      url.pathname === window.location.pathname &&
+      url.search === window.location.search;
+
+    if (!isCurrentPage || !url.hash || url.hash === "#") {
+      return;
+    }
+
+    const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const header = document.querySelector(".site-header");
+    const headerOffset = header ? header.offsetHeight : 0;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: reduceMotion ? "auto" : "smooth"
+    });
+
+    window.history.pushState(null, "", url.hash);
+  });
+}
+
 function applyTheme(theme) {
   const root = document.documentElement;
   const isLight = theme === "light";
@@ -77,6 +115,7 @@ function initThemeToggle() {
 }
 
 window.addEventListener("load", function () {
+  initSmoothScrolling();
   initThemeToggle();
 
   const gclidField = document.getElementById("gclid");
