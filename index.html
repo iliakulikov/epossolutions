@@ -1,348 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete POS System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPOS Solutions Ireland | Powerful EPOS from €399</title>
+  <meta name="description" content="Powerful EPOS systems for Irish retail, hospitality and services. From €399 with Windows licence, payment terminal, installation, training and 7-day support.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow">
+  <meta name="GPTBot" content="index, follow">
+  <meta name="ClaudeBot" content="index, follow">
+  <meta name="Google-Extended" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EPOS Solutions Ireland | Powerful EPOS from €399">
+  <meta property="og:description" content="Next-generation EPOS for Irish businesses. Installed and supported by local engineers.">
+  <meta property="og:url" content="https://epossolutions.ie/">
+  <meta property="og:image" content="https://epossolutions.ie/img/webp/hero-device.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EPOS Solutions Ireland | Powerful EPOS from €399">
+  <meta name="twitter:description" content="EPOS for retail, hospitality and services with full setup and 7-day support.">
+  <meta name="twitter:image" content="https://epossolutions.ie/img/webp/hero-device.webp">
+  <link rel="canonical" href="https://epossolutions.ie/">
 
-    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="img/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EPOS Solutions Ireland",
+    "url": "https://epossolutions.ie",
+    "telephone": "+35312745807",
+    "email": "info@epossolutions.ie",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit 4, 21 Beechwood Cl, Kilruddery Demesne East",
+      "addressLocality": "Bray",
+      "addressRegion": "Wicklow",
+      "addressCountry": "IE"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "EPOS supply, installation and support",
+    "provider": {
+      "@type": "Organization",
+      "name": "EPOS Solutions Ireland"
+    },
+    "areaServed": "Ireland"
+  }
+  </script>
 </head>
 <body>
-    <div class="wrapper">
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="ePOS Solutions" height="40" width="159">
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <a href="about.html">About</a>
-                    <a href="#contact">Contact</a>
-                    <button class="cta-button" onclick="location.href='#contact'">Get Offer</button>
-                </div>
-                <img src="img/burger.svg" alt="Menu" class="burger-menu" onclick="toggleMenu()">
-            </nav>
-            <div class="mobile-nav" id="mobile-nav">
-                <a href="javascript:void(0);" class="closebtn" onclick="toggleMenu()">&times;</a>
-                <a href="about.html" onclick="toggleMenu()">About</a>
-                <a href="#contact" onclick="toggleMenu()">Contact</a>
-                <button class="cta-button" onclick="location.href='#contact'; toggleMenu();">Get Offer</button>
-            </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="EPOS Solutions home">
+        <img src="img/webp/logo.webp" alt="EPOS Solutions" width="159" height="40">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu()">
+        <img src="img/burger.svg" alt="Open menu" width="26" height="26">
+      </button>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a class="nav-link" href="#solutions">Solutions</a>
+        <a class="nav-link" href="#integrations">Integrations</a>
+        <a class="nav-link" href="#industries">Industries</a>
+        <a class="nav-link" href="#contact">Support</a>
+      </nav>
+
+      <div class="nav-utilities">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+          <span class="dot" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <path d="M10.4925 6.243C10.4456 7.11107 10.1483 7.94699 9.63654 8.6497C9.12473 9.35242 8.42034 9.89184 7.60851 10.2028C6.79668 10.5137 5.91216 10.5828 5.06189 10.4018C4.21161 10.2207 3.43198 9.79726 2.81723 9.18258C2.20248 8.5679 1.77894 7.78831 1.59781 6.93805C1.41667 6.0878 1.4857 5.20327 1.79654 4.39141C2.10738 3.57954 2.64673 2.87509 3.34939 2.36322C4.05205 1.85134 4.88793 1.55395 5.756 1.507C5.9585 1.496 6.0645 1.737 5.957 1.9085C5.59744 2.48378 5.44349 3.16393 5.52025 3.83798C5.59701 4.51202 5.89996 5.14014 6.37966 5.61984C6.85936 6.09954 7.48748 6.40249 8.16152 6.47925C8.83557 6.55601 9.51572 6.40205 10.091 6.0425C10.263 5.935 10.5035 6.0405 10.4925 6.243Z" stroke="#020B1B" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <a class="btn btn-primary nav-cta" href="#contact">Book demo <span class="arrow">›</span></a>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#solutions" onclick="toggleMenu()">Solutions</a>
+      <a href="#integrations" onclick="toggleMenu()">Integrations</a>
+      <a href="#industries" onclick="toggleMenu()">Industries</a>
+      <a href="#contact" onclick="toggleMenu()">Support</a>
+      <a class="btn btn-primary" href="#contact" onclick="toggleMenu()">Book demo</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad" id="solutions">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">
+            <span class="pill-icon" aria-hidden="true">
+              <img src="img/hero-sale-icon.svg" alt="" width="12" height="12">
+            </span>
+            Special sale — from €399
+          </p>
+          <h1>
+            <span class="hero-line">Powerful EPOS.</span>
+            <span class="hero-line hero-line-accent">From €399.</span>
+          </h1>
+          <p class="hero-copy">Next-generation EPOS systems for Irish 🇮🇪 retail, hospitality and services. Windows licence and payment terminal included. Installed and trained by our own engineers.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-hero-primary" href="#contact">
+              <span>Get your offer</span>
+              <span class="btn-icon" aria-hidden="true">
+                <img src="img/hero-cta-arrow.svg" alt="" width="16" height="16">
+              </span>
+            </a>
+            <a class="btn btn-muted btn-hero-secondary" href="tel:+35312745807">
+              <span class="btn-icon btn-icon-phone" aria-hidden="true">
+                <img src="img/hero-phone-icon.svg" alt="" width="16" height="16">
+              </span>
+              <span>Call (01) 274 5807</span>
+            </a>
+          </div>
+          <ul class="hero-flags">
+            <li>
+              <span class="hero-flag-icon" aria-hidden="true">
+                <img src="img/hero-enterprise-icon.svg" alt="" width="16" height="16">
+              </span>
+              <span>Enterprise-grade</span>
+            </li>
+            <li>
+              <span class="hero-flag-icon" aria-hidden="true">
+                <img src="img/hero-cloud-icon.svg" alt="" width="16" height="16">
+              </span>
+              <span>Cloud connected</span>
+            </li>
+            <li>
+              <span class="hero-flag-icon" aria-hidden="true">
+                <img src="img/hero-support-icon.svg" alt="" width="16" height="16">
+              </span>
+              <span>Irish support, 7 days</span>
+            </li>
+          </ul>
         </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="spring-sale">
-                    <img src="img/discount.svg" alt="Discount Icon" class="discount-icon">
-                    SPECIAL SALE
-                </div>
-                <h1>Complete POS system</h1>
-                <p>Over 50,000 users worldwide</p>
-                <button class="cta-button" onclick="location.href='#contact'">Get offer from €399</button>
-                <div class="badges-container">
-                    <div class="windows-badge">
-                        <img src="img/windows-icon.svg" alt="Windows included">
-                        <div class="windows-text">
-                            <span>WINDOWS</span>
-                            <span>INCLUDED</span>
-                        </div>
-                    </div>
-                    <div class="pos-badge">
-                        <img src="img/pos_icon.svg" alt="Free Payment Terminal">
-                        <div class="pos-text">
-                            <span>FREE</span>
-                            <span>TERMINAL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="img/pos-system.webp" alt="POS System Display with Adjustable Stand">
-            </div>
-        </section>
-
-        <section class="partners">
-            <h2>Our partners</h2>
-            <div class="partner-logos">
-                <img src="img/toshiba.svg" alt="Toshiba">
-                <img src="img/microsoft.svg" alt="Microsoft">
-                <img src="img/samsung.svg" alt="Samsung">
-                <img src="img/epson.svg" alt="Epson">
-                <img src="img/xero.svg" alt="Xero">
-                <img src="img/elo.svg" alt="Elo">
-                <img src="img/woo.svg" alt="WooCommerce">
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <img src="img/oneill.png" alt="O'Neill" class="testimonial-img">
-                    <p>”An engineer came to our premises to install the system & train our staff, which was very important to us & continued backup support.”</p>
-                    <div class="testimonial-author">
-                        <span>Hugh</span>
-                        <span>Founder, O'Neill's Pub</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <img src="img/oshea.png" alt="O'Shea's Restaurant" class="avatar-original">
-                    <p>”Good company to deal with, excellent backup service.”</p>
-                    <div class="testimonial-author">
-                        <span>Martin</span>
-                        <span>Founder, O'Shea's Restaurant</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <img src="img/tipperary.png" alt="Tipperary Crystal" class="testimonial-img">
-                    <p>”Excellent EPOS System.”</p>
-                    <div class="testimonial-author">
-                        <span>Peter</span>
-                        <span>Founder, Tipperary Crystal</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <img src="img/jumpzone.png" alt="Jump Zone" class="avatar-original">
-                    <p>"Excellent System & Backup service."</p>
-                    <div class="testimonial-author">
-                        <span>Paul Quinn</span>
-                        <span>Founder, Jump Zone</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="systems">
-            <h2>EPOS Systems</h2>
-            <div class="systems-grid">
-                <div class="system-card">
-                    <img src="img/retail.webp" alt="Retail">
-                    <div class="system-content">
-                        <h3>Retail</h3>
-                        <p>For any retailer with a brick-and-mortar or online store</p>
-                        <button class="demo-btn" onclick="location.href='#contact'">Book a demo</button>
-                        <h4>Features:</h4>
-                        <div class="features-grid">
-                            <ul>
-                                <li>Barcode scanning</li>
-                                <li>Single or multi site solutions</li>
-                                <li>Stock control</li>
-                                <li>Management control</li>
-                                <li>Product / shelf edge label printing</li>
-                            </ul>
-                            <ul>
-                                <li>Staff training mode</li>
-                                <li>Handheld data collection</li>
-                                <li>Total offsite management</li>
-                                <li>CCTV integration</li>
-                                <li>Integration with stock control</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-card">
-                    <img src="img/hospitality.webp" alt="Hospitality">
-                    <div class="system-content">
-                        <h3>Hospitality</h3>
-                        <p>Perfect for restaurants, pubs, and hotels</p>
-                        <button class="demo-btn" onclick="location.href='#contact'">Book a demo</button>
-                        <h4>Features:</h4>
-                        <div class="features-grid">
-                            <ul>
-                                <li>Kitchen Video System</li>
-                                <li>Kitchen Printing</li>
-                                <li>Table Management</li>
-                                <li>Handheld Ordering</li>
-                                <li>Bookings - Through Res Diary</li>
-                            </ul>
-                            <ul>
-                                <li>Customer Loyalty / Data Base</li>
-                                <li>Staff Training Mode</li>
-                                <li>CCTV - Integration</li>
-                                <li>Single or Multi Site Solutions</li>
-                                <li>E-commerce integration with stock control</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-card" id="dojo">
-                    <img src="img/dojo.webp" alt="EPOS in your Pocket">
-                    <div class="system-content">
-                        <h3>EPOS in your Pocket</h3>
-                        <p>Take customer orders and payments at the counter or table</p>
-                        <button class="demo-btn" onclick="location.href='#contact'">Get in touch to find out more</button>
-                        <h4>Features:</h4>
-                        <div class="features-grid">
-                            <ul>
-                                <li>Your menu with integrated card payment technology</li>
-                                <li>Keep your best staff on the floor & boost Sales</li>
-                                <li>Free up your EPOS terminal with our queue-busting feature</li>
-                                <li>Don't miss out on extra orders due to slow service</li>
-                            </ul>
-                            <ul>
-                                <li>Elevate your business with our innovative devices</li>
-                                <li>Deliver an exceptional customer experience</li>
-                                <li><a href="https://www.youtube.com/watch?v=P1Jx5ZJbiKw" target="_blank" style="color: inherit; text-decoration: underline;">Watch our video for more information</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-card">
-                    <img src="img/cloud.webp" alt="Cloud Solutions">
-                    <div class="system-content">
-                        <h3>Cloud Solutions</h3>
-                        <p>For any retailer with a brick-and-mortar or online store</p>
-                        <button class="demo-btn" onclick="location.href='#contact'">Book a demo</button>
-                        <h4>Features:</h4>
-                        <div class="features-grid">
-                            <ul>
-                                <li>Cloud based head office software</li>
-                                <li>Single or multi site solutions</li>
-                                <li>Centralised Control</li>
-                                <li>Personalised setup for Individual Stores</li>
-                                <li>Simple Till Maintenance</li>
-                            </ul>
-                            <ul>
-                                <li>Real Time Reporting</li>
-                                <li>Single or Multi Stock Locations & Transfers</li>
-                                <li>Quick & Easy Setup</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="video-demo">
-            <div class="container">
-            <h2>See our system in action</h2>
-            <div class="video-wrapper">
-                <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/jrsRDmTw9Uo" 
-                title="EPOS System Demo" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-                </iframe>
-            </div>
-            <br>
-            <div class="video-wrapper">
-                <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/P1Jx5ZJbiKw" 
-                title="EPOS Terminal Demo" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-                </iframe>
-            </div>
-            </div>
-        </section>
-
-        <section class="benefits">
-            <h2>Our benefits</h2>
-            <div class="benefits-block">
-                <img src="img/benefits.webp" alt="Benefits">
-                <div class="benefits-content">
-                    <ul>
-                        <li>
-                            <h3>Experience</h3>
-                            <p>We are an Irish company, with over 27 years of experience.</p>
-                        </li>
-                        <li>
-                            <h3>Service</h3>
-                            <p>Friendly service, expert advice. Dedicated team of engineers.</p>
-                        </li>
-                        <li>
-                            <h3>Support</h3>
-                            <p>Full setup, installation and 7 day support.</p>
-                        </li>
-                        <li>
-                            <h3>Solutions</h3>
-                            <p>Retail & Hospitality specific solutions available.</p>
-                        </li>
-                        <li>
-                            <h3>Warranty</h3>
-                            <p>Full warranty and support provided.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Contact us</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p>Epos Solutions</p>
-                    <p>Unit 4, 21 Beechwood Cl, Kilruddery Demesne East, Bray, Co. Wicklow, Ireland</p>
-                    <p>Phone: (01) 274 5807</p>
-                    <p>Email: <a href="mailto:info@epossolutions.ie">info@epossolutions.ie</a></p>
-                </div>
-                <form name="submit-to-google-sheet" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" placeholder="Alex Smith">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="alexsmith@gmail.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+01">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">What can we help you with?</label>
-                        <textarea id="message" name="message"></textarea>
-                    </div>
-                    <input type="hidden" name="gclid" id="gclid">
-                    <button type="submit" class="cta-button">Send <div class="spinner" id="spinner" style="display: none;">
-                    </div></button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="img/logo-white.png" alt="ePOS Solutions" height="40" width="161">
-                <p>EPOS Solutions Ireland</p>
-                <p>© 2025 Epos Solutions</p>
-            </div>
-                <div class="footer-info">
-                    <div class="footer-info-top">
-                        <p>Contact</p>
-                        <p>Customer support: (01) 274-5807</p>
-                        <p>Email: info@epossolutions.ie</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="privacy.html">Privacy Policy</a>
-                    </div>
-                </div>
+        <div class="hero-art-wrap">
+          <img class="hero-art" src="img/webp/hero-device.webp" alt="Complete EPOS setup with touchscreen, scanner and card terminal" loading="eager" decoding="async">
         </div>
-    </footer>
-</div>
-    <script src="app.js"></script>
+      </div>
+    </section>
+
+    <section class="band band-cards">
+      <div class="container cards-4">
+        <article class="info-card">
+          <div class="card-badge" aria-hidden="true">
+            <img src="img/card-efficiency-icon.svg" alt="" width="20" height="20">
+          </div>
+          <h2>Boost efficiency.</h2>
+          <p>Streamline operations and save hours every week with tools designed for busy teams.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-badge" aria-hidden="true">
+            <img src="img/card-sales-icon.svg" alt="" width="20" height="20">
+          </div>
+          <h2>Increase sales.</h2>
+          <p>Real-time insights, loyalty and table-side ordering — smarter tools that help you grow.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-badge" aria-hidden="true">
+            <img src="img/card-integrations-icon.svg" alt="" width="20" height="20">
+          </div>
+          <h2>Seamless integrations.</h2>
+          <p>WooCommerce, Shopify, Xero, Sage, Dojo, ResDiary and more — all in sync.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-badge" aria-hidden="true">
+            <img src="img/card-security-icon.svg" alt="" width="20" height="20">
+          </div>
+          <h2>Built for security.</h2>
+          <p>Encrypted payments, role-based access and Irish support keep your data safe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad integrations" id="integrations">
+      <div class="container integrations-grid">
+        <div>
+          <p class="kicker">Integrations</p>
+          <h2>Everything connected. Everything in sync.</h2>
+          <p class="integrations-copy">From accounting to eCommerce to payments — we plug the tools you already love into a single, real-time system.</p>
+          <div class="chip-row">
+            <span>WooCommerce</span><span>Shopify</span><span>Sage</span><span>Xero</span><span>Dojo</span><span>ResDiary</span><span>+ many more</span>
+          </div>
+        </div>
+        <div class="logo-grid" aria-label="Partner logos">
+          <img src="img/toshiba.svg" alt="Toshiba" loading="lazy">
+          <img src="img/samsung.svg" alt="Samsung" loading="lazy">
+          <img src="img/epson.svg" alt="Epson" loading="lazy">
+          <img src="img/xero.svg" alt="Xero" loading="lazy">
+          <img src="img/elo.svg" alt="Elo" loading="lazy">
+          <img class="integration-microsoft" src="img/webp/microsoft.webp" alt="Microsoft" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="epos-suite" aria-labelledby="epos-suite-title">
+      <div class="container epos-suite-inner">
+        <p class="kicker center">Complete EPOS Solutions</p>
+        <h2 class="center" id="epos-suite-title">Everything you need. All working together.</h2>
+
+        <div class="epos-feature-grid">
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-epos-system.svg" alt="" width="18" height="18"></span>
+            <h3>EPOS systems</h3>
+            <p>Reliable, fast and easy-to-use terminals for every business.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-stock.svg" alt="" width="18" height="18"></span>
+            <h3>Stock management</h3>
+            <p>Real-time stock across every till, store and sales channel.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-payments.svg" alt="" width="18" height="18"></span>
+            <h3>Integrated payments</h3>
+            <p>Card, cash, contactless and gift cards out of the box.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-ecommerce.svg" alt="" width="18" height="18"></span>
+            <h3>eCommerce sync</h3>
+            <p>WooCommerce and Shopify orders, in real time.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-accounting.svg" alt="" width="18" height="18"></span>
+            <h3>Accounting</h3>
+            <p>Seamless Xero and Sage integration — no double entry.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-reporting.svg" alt="" width="18" height="18"></span>
+            <h3>Reporting &amp; insights</h3>
+            <p>Powerful dashboards to track performance and growth.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-support.svg" alt="" width="18" height="18"></span>
+            <h3>Support &amp; training</h3>
+            <p>Irish-based, 7-day support. We're here when you need us.</p>
+          </article>
+          <article class="epos-feature-card">
+            <span class="epos-feature-icon" aria-hidden="true"><img src="img/solution-locations.svg" alt="" width="18" height="18"></span>
+            <h3>Multi-location</h3>
+            <p>Manage every store, staff and till from one platform.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries" id="industries" aria-labelledby="industries-title">
+      <div class="container industries-intro">
+        <p class="kicker center">Built for every industry</p>
+        <h2 class="center" id="industries-title">EPOS solutions that fit your business.</h2>
+
+        <div class="industry-type-grid">
+          <article class="industry-type-card">
+            <span class="industry-type-icon" aria-hidden="true"><img src="img/industry-retail-icon.svg" alt="" width="20" height="20"></span>
+            <h3>Retail</h3>
+            <p>Boutiques, fashion, electronics, convenience and more.</p>
+          </article>
+          <article class="industry-type-card">
+            <span class="industry-type-icon" aria-hidden="true"><img src="img/industry-hospitality-icon.svg" alt="" width="20" height="20"></span>
+            <h3>Hospitality</h3>
+            <p>Restaurants, cafés, bars, hotels and nightlife.</p>
+          </article>
+          <article class="industry-type-card">
+            <span class="industry-type-icon" aria-hidden="true"><img src="img/industry-takeaway-icon.svg" alt="" width="20" height="20"></span>
+            <h3>Takeaways</h3>
+            <p>Online ordering, delivery, collections and kitchen printing.</p>
+          </article>
+          <article class="industry-type-card">
+            <span class="industry-type-icon" aria-hidden="true"><img src="img/industry-services-icon.svg" alt="" width="20" height="20"></span>
+            <h3>Services</h3>
+            <p>Salons, clinics, gyms and appointment-based businesses.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="industry-showcases">
+        <article class="industry-showcase">
+          <div class="container industry-showcase-grid">
+            <div class="industry-showcase-image">
+              <img src="img/industry-retail.png" alt="Retail EPOS terminal in use" loading="lazy">
+            </div>
+            <div class="industry-showcase-copy">
+              <p class="kicker">Retail</p>
+              <h3>Built for the shop floor.</h3>
+              <p class="industry-summary">Barcode scanning, multi-site stock control, shelf-edge labels and handheld data collection — run one store or fifty.</p>
+              <ul class="industry-feature-list">
+                <li>Barcode scanning</li><li>Stock &amp; shelf-edge labels</li>
+                <li>Multi-site management</li><li>Handheld data collection</li>
+                <li>CCTV integration</li><li>Staff training mode</li>
+              </ul>
+              <a class="industry-demo-link" href="#contact">Book a demo <img src="img/industry-arrow.svg" alt="" width="16" height="16"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="industry-showcase">
+          <div class="container industry-showcase-grid reverse">
+            <div class="industry-showcase-image">
+              <img src="img/industry-hospitality.jpg" alt="Hospitality EPOS terminal in use" loading="lazy">
+            </div>
+            <div class="industry-showcase-copy">
+              <p class="kicker">Hospitality</p>
+              <h3>Made for service.</h3>
+              <p class="industry-summary">Kitchen video, table management, integrated bookings and customer loyalty — designed for restaurants, pubs and hotels that move fast.</p>
+              <ul class="industry-feature-list">
+                <li>Kitchen video &amp; printing</li><li>Table management</li>
+                <li>Bookings via ResDiary</li><li>Customer loyalty &amp; CRM</li>
+                <li>eCommerce stock sync</li><li>Multi-site solutions</li>
+              </ul>
+              <a class="industry-demo-link" href="#contact">Book a demo <img src="img/industry-arrow.svg" alt="" width="16" height="16"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="industry-showcase">
+          <div class="container industry-showcase-grid">
+            <div class="industry-showcase-image">
+              <img src="img/industry-pocket.png" alt="Handheld EPOS terminal taking a card payment" loading="lazy">
+            </div>
+            <div class="industry-showcase-copy">
+              <p class="kicker">EPOS in your pocket</p>
+              <h3>The till, in your hand.</h3>
+              <p class="industry-summary">Take orders and payments at the table. Free up the main terminal. Beat the queue and capture every order — even at peak.</p>
+              <ul class="industry-feature-list">
+                <li>Menu + integrated card payment</li><li>Table-side ordering</li>
+                <li>Queue-busting at peak</li><li>Faster table turn</li>
+                <li>Free up the main terminal</li><li>Better customer experience</li>
+              </ul>
+              <a class="industry-demo-link" href="#contact">Book a demo <img src="img/industry-arrow.svg" alt="" width="16" height="16"></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process-section" aria-labelledby="process-title">
+      <div class="container process-inner">
+        <p class="kicker center">How it works</p>
+        <h2 class="center" id="process-title">Simple process. Powerful results.</h2>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="process-number">01</span>
+            <h3>Consult</h3>
+            <p>We learn about your business and recommend the right EPOS.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">02</span>
+            <h3>Setup</h3>
+            <p>We install, configure and integrate everything seamlessly.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">03</span>
+            <h3>Train</h3>
+            <p>We train your team so you're confident from day one.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">04</span>
+            <h3>Support</h3>
+            <p>Ongoing Irish-based support, 7 days a week.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section" aria-labelledby="offer-title">
+      <div class="offer-glow" aria-hidden="true"></div>
+      <div class="container offer-shell">
+        <div class="offer-content">
+          <p class="offer-badge"><img src="img/offer-offer.svg" alt="" width="12" height="12"> Special offer</p>
+          <h2 id="offer-title"><span>From €399.</span><span>Windows + terminal</span><span>included.</span></h2>
+          <p class="offer-copy">A complete system, installed and trained on-site by our engineers. No setup fees. No surprises.</p>
+          <div class="offer-actions">
+            <a class="offer-primary" href="#contact">Get your offer <img src="img/offer-arrow.svg" alt="" width="16" height="16"></a>
+            <a class="offer-phone" href="tel:+35312745807"><img src="img/offer-phone.svg" alt="" width="16" height="16"> (01) 274 5807</a>
+          </div>
+        </div>
+        <img class="offer-product" src="img/offer-terminal.png" alt="POS terminal with customer display" loading="lazy">
+      </div>
+    </section>
+
+    <section class="customers-section" aria-labelledby="customers-title">
+      <div class="container customers-inner">
+        <p class="kicker center">Customers</p>
+        <h2 class="center" id="customers-title">Trusted by the businesses you know.</h2>
+
+        <div class="customer-grid">
+          <figure class="customer-quote">
+            <blockquote>“An engineer came to our premises to install the system and train our staff. The backup support has been excellent ever since.”</blockquote>
+            <figcaption><span class="customer-logo"><img src="img/customer-oneill.png" alt="O'Neill's Pub logo"></span><span><strong>Hugh</strong><small>Founder, O'Neill's Pub</small></span></figcaption>
+          </figure>
+          <figure class="customer-quote">
+            <blockquote>“Good company to deal with — excellent backup service.”</blockquote>
+            <figcaption><span class="customer-logo"><img src="img/customer-oshea.png" alt="O'Shea's of Temple Bar logo"></span><span><strong>Martin</strong><small>Founder, O'Shea's of Temple Bar</small></span></figcaption>
+          </figure>
+          <figure class="customer-quote">
+            <blockquote>“Excellent EPOS system. Reliable from day one.”</blockquote>
+            <figcaption><span class="customer-logo"><img src="img/customer-tipperary.png" alt="Tipperary Crystal logo"></span><span><strong>Peter</strong><small>Founder, Tipperary Crystal</small></span></figcaption>
+          </figure>
+          <figure class="customer-quote">
+            <blockquote>“Excellent system and backup service.”</blockquote>
+            <figcaption><span class="customer-logo"><img src="img/customer-jumpzone.png" alt="Jump Zone logo"></span><span><strong>Paul Quinn</strong><small>Founder, Jump Zone</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-section" aria-labelledby="partners-title">
+      <div class="container partners-inner">
+        <h2 id="partners-title">Our partners</h2>
+        <div class="partners-row">
+          <img src="img/partner-microsoft.svg" alt="Microsoft" loading="lazy">
+          <img src="img/partner-toshiba.svg" alt="Toshiba" loading="lazy">
+          <img src="img/partner-samsung.svg" alt="Samsung" loading="lazy">
+          <img src="img/partner-epson.svg" alt="Epson" loading="lazy">
+          <img src="img/partner-xero.svg" alt="Xero" loading="lazy">
+          <img src="img/partner-elo.svg" alt="Elo" loading="lazy">
+          <img src="img/partner-woo.svg" alt="WooCommerce" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Company statistics">
+      <div class="container stats-row">
+        <div><strong>27+</strong><span>years on Irish floors</span></div>
+        <div><strong>50,000+</strong><span>users worldwide</span></div>
+        <div><strong>7-day</strong><span>support coverage</span></div>
+        <div><strong>Free</strong><span>payment terminal</span></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-content">
+          <p class="kicker">Ready to connect your business?</p>
+          <h2 id="contact-title">Tell us about your business.</h2>
+          <p class="contact-intro">We'll come back with a fixed quote, the right hardware and an install date — same business day.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+35312745807"><span><img src="img/contact-phone.svg" alt="" width="16" height="16"></span>(01) 274 5807</a></li>
+            <li><a href="mailto:info@epossolutions.ie"><span><img src="img/contact-email.svg" alt="" width="16" height="16"></span>info@epossolutions.ie</a></li>
+            <li><span><img src="img/contact-location.svg" alt="" width="16" height="16"></span>Unit 4, 21 Beechwood Cl, Bray, Co. Wicklow</li>
+          </ul>
+          <div class="contact-benefits" aria-label="Consultation benefits">
+            <span>Free consultation</span><span>No obligation</span><span>Tailored for you</span><span>Nationwide coverage</span>
+          </div>
+        </div>
+
+        <form name="submit-to-google-sheet" class="lead-form" novalidate>
+          <div class="form-row">
+            <div><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Mary O'Sullivan" required></div>
+            <div><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+353 ..." required></div>
+          </div>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@business.ie" required>
+
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your shop, restaurant or office..." required></textarea>
+
+          <input type="hidden" name="gclid" id="gclid">
+          <button class="btn btn-primary btn-submit" type="submit">
+            <span>Request my offer&nbsp; →</span>
+            <span class="spinner" id="spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-note">We reply same business day. No spam, ever.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="footer-brand" href="index.html" aria-label="EPOS Solutions home"><img src="img/footer-logo.png" alt="EPOS Solutions" width="130" height="24"></a>
+      <nav class="footer-links" aria-label="Footer links"><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+      <p class="footer-tagline">Irish-built EPOS since 1998.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

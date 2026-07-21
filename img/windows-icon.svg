@@ -1,4 +1,11 @@
-<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="55" height="55" rx="12" fill="white"/>
-<path d="M16 19.3939L25.6 18.0635V27.4308H16M26.7563 17.8735L39.4756 16V27.3493H26.7563M16 28.4191H25.6V37.8135L16 36.456M26.7563 28.544H39.4756V39.7847L26.7563 37.9656" fill="#1A1A1A"/>
+<svg preserveAspectRatio="xMidYMid meet" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="windows-icon.svg" clip-path="url(#clip0_0_4)">
+<path id="Vector" d="M25.0182 0H6.98182C3.12587 0 0 3.12587 0 6.98182V25.0182C0 28.8741 3.12587 32 6.98182 32H25.0182C28.8741 32 32 28.8741 32 25.0182V6.98182C32 3.12587 28.8741 0 25.0182 0Z" fill="black"/>
+<path id="Vector_2" d="M9.30909 11.2837L14.8945 10.5097V15.9597H9.30909M15.5673 10.3991L22.9676 9.30909V15.9123H15.5673M9.30909 16.5347H14.8945V22.0006L9.30909 21.2108M15.5673 16.6074H22.9676V23.1475L15.5673 22.0891" fill="#E5E5E5"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
 </svg>

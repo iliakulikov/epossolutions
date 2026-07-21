@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete POS System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="48x48">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | EPOS Solutions Ireland</title>
+  <meta name="description" content="Thanks for contacting EPOS Solutions Ireland. We'll be in touch shortly.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="GPTBot" content="noindex, follow">
+  <meta name="ClaudeBot" content="noindex, follow">
+  <meta name="Google-Extended" content="noindex, follow">
+  <link rel="canonical" href="https://epossolutions.ie/thankyou.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="container">
-                <nav>
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="ePOS Solutions" height="40" width="159">
-                        </a>
-                    </div>
-                    <div class="nav-links">
-                        <a href="about.html">About</a>
-                        <a href="index.html#contact">Contact</a>
-                        <button class="cta-button" onclick="location.href='index.html#contact'">Get Offer</button>
-                    </div>
-                    <img src="img/burger.svg" alt="Menu" class="burger-menu" onclick="toggleMenu()">
-                </nav>
-                <div class="mobile-nav" id="mobile-nav">
-                    <a href="javascript:void(0);" class="closebtn" onclick="toggleMenu()">&times;</a>
-                    <a href="about.html" onclick="toggleMenu()">About</a>
-                    <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
-                    <button class="cta-button" onclick="location.href='index.html#contact'; toggleMenu();">Get Offer</button>
-                </div>
-            </div>
-        </header>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><img src="img/webp/logo.webp" alt="EPOS Solutions" width="159" height="40"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu()">
+        <img src="img/burger.svg" alt="Open menu" width="26" height="26">
+      </button>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html#solutions">Solutions</a>
+        <a class="nav-link" href="index.html#integrations">Integrations</a>
+        <a class="nav-link" href="index.html#industries">Industries</a>
+        <a class="nav-link" href="index.html#contact">Support</a>
+      </nav>
+      <div class="nav-utilities">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+          <span class="dot" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <path d="M10.4925 6.243C10.4456 7.11107 10.1483 7.94699 9.63654 8.6497C9.12473 9.35242 8.42034 9.89184 7.60851 10.2028C6.79668 10.5137 5.91216 10.5828 5.06189 10.4018C4.21161 10.2207 3.43198 9.79726 2.81723 9.18258C2.20248 8.5679 1.77894 7.78831 1.59781 6.93805C1.41667 6.0878 1.4857 5.20327 1.79654 4.39141C2.10738 3.57954 2.64673 2.87509 3.34939 2.36322C4.05205 1.85134 4.88793 1.55395 5.756 1.507C5.9585 1.496 6.0645 1.737 5.957 1.9085C5.59744 2.48378 5.44349 3.16393 5.52025 3.83798C5.59701 4.51202 5.89996 5.14014 6.37966 5.61984C6.85936 6.09954 7.48748 6.40249 8.16152 6.47925C8.83557 6.55601 9.51572 6.40205 10.091 6.0425C10.263 5.935 10.5035 6.0405 10.4925 6.243Z" stroke="#020B1B" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <a class="btn btn-primary nav-cta" href="index.html#contact">Book demo <span class="arrow">›</span></a>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html#solutions" onclick="toggleMenu()">Solutions</a>
+      <a href="index.html#integrations" onclick="toggleMenu()">Integrations</a>
+      <a href="index.html#industries" onclick="toggleMenu()">Industries</a>
+      <a href="index.html#contact" onclick="toggleMenu()">Support</a>
+      <a class="btn btn-primary" href="index.html#contact" onclick="toggleMenu()">Book demo</a>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <div class="about">
-                <h1 class="about-h1">Thank you for your interest</h1>
-                <p>We will reach out to you shortly</p>
-            </div>
-        </section>
+  <main class="page-shell">
+    <div class="container page-card" style="text-align:center; max-width: 760px;">
+      <h1>Thank you for your interest.</h1>
+      <p>Our team will contact you shortly with your EPOS offer.</p>
+      <p><a class="btn btn-primary" href="index.html">Back to homepage</a></p>
+    </div>
+  </main>
 
-        <section class="partners">
-            <h2>Our partners</h2>
-            <div class="partner-logos">
-                <img src="img/toshiba.svg" alt="Toshiba">
-                <img src="img/microsoft.svg" alt="Microsoft">
-                <img src="img/samsung.svg" alt="Samsung">
-                <img src="img/epson.svg" alt="Epson">
-                <img src="img/xero.svg" alt="Xero">
-                <img src="img/elo.svg" alt="Elo">
-                <img src="img/woo.svg" alt="WooCommerce">
-            </div>
-        </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="img/webp/logo-white.webp" alt="EPOS Solutions" width="161" height="40">
+        <p>EPOS Solutions Ireland</p>
+        <p>© 2026 EPOS Solutions</p>
+      </div>
+      <div>
+        <p>Customer support: (01) 274-5807</p>
+        <p>Email: info@epossolutions.ie</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="v1/index.html">Old website (v1)</a>
+      </div>
+    </div>
+  </footer>
 
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="img/logo-white.png" alt="ePOS Solutions" height="40" width="161">
-                <p>EPOS Solutions Ireland</p>
-                <p>© 2025 Epos Solutions</p>
-            </div>
-                <div class="footer-info">
-                    <div class="footer-info-top">
-                        <p>Contact</p>
-                        <p>Customer support: (01) 274-5807</p>
-                        <p>Email: info@epossolutions.ie</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="privacy.html">Privacy Policy</a>
-                    </div>
-                </div>
-        </div>
-    </footer>
-</div>
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
