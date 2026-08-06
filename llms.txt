@@ -2,10 +2,16 @@
 
 This website presents EPOS hardware/software offerings for Irish retail, hospitality and service businesses.
 
-Preferred citation URL: https://epossolutions.ie/
+Preferred citation URL: https://www.epossolutions.ie/
 Contact: info@epossolutions.ie
 Phone: +353 1 274 5807
 
 Policy pages:
-- https://epossolutions.ie/privacy.html
-- https://epossolutions.ie/terms.html
+- https://www.epossolutions.ie/about-us/
+- https://www.epossolutions.ie/contact-us/
+- https://www.epossolutions.ie/epos-retail-solutions/
+- https://www.epossolutions.ie/hospitality-epos-solutions-utm-gads/
+- https://www.epossolutions.ie/what-are-epos-systems/
+- https://www.epossolutions.ie/choosing-an-epos-system/
+- https://www.epossolutions.ie/privacy.html
+- https://www.epossolutions.ie/terms.html

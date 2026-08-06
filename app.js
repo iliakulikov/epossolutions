@@ -126,6 +126,18 @@ window.addEventListener("load", function () {
   }
 
   const form = document.forms["submit-to-google-sheet"];
+
+  document.addEventListener("click", function (event) {
+    const trackedLink = event.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (trackedLink) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: trackedLink.href.indexOf("tel:") === 0 ? "phone_click" : "email_click",
+        link_url: trackedLink.href
+      });
+    }
+  });
+
   if (!form) {
     return;
   }
@@ -145,9 +157,14 @@ window.addEventListener("load", function () {
       spinner.style.display = "inline-block";
     }
 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "generate_lead", form_name: "contact_offer" });
+
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then(function () {
-        window.location.href = "thankyou.html";
+        const appScript = document.querySelector('script[src$="app.js"]');
+        const siteRoot = appScript ? new URL(".", appScript.src) : new URL("/", window.location.href);
+        window.location.href = new URL("thankyou.html", siteRoot).href;
       })
       .catch(function (error) {
         if (spinner) {

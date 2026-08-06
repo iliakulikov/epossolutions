@@ -10,4 +10,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://epossolutions.ie/sitemap.xml
+Sitemap: https://www.epossolutions.ie/sitemap.xml

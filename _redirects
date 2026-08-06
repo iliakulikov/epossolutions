@@ -1,0 +1,9 @@
+# Used automatically if this repository is deployed on Cloudflare Pages or Netlify.
+# GitHub Pages serves the matching static fallback pages in this repository instead.
+/home/                                      /                                      301
+/home-page/                                 /                                      301
+/home-page-2019/                            /                                      301
+/about.html                                 /about-us/                             301
+/book-a-demo/                               /contact-us/                           301
+/request-a-quote/                           /contact-us/                           301
+https://epossolutions.ie/*                  https://www.epossolutions.ie/:splat    301!
